@@ -1,23 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ConsoleApp2
 {
-    class Program
+    public partial class Form1 : Form
     {
-        
-        static void Main(string[] args)
+        public Form1()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            InitializeComponent();
         }
 
-        public static string ToHex(string data)
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+        public string ToHex(string data)
         {
 
             string output = string.Empty;
@@ -32,7 +37,7 @@ namespace ConsoleApp2
             return output;
 
         }
-        public static string ToASCII(string hexString)
+        public string ToASCII(string hexString)
         {
             try
             {
@@ -55,6 +60,17 @@ namespace ConsoleApp2
 
             return string.Empty;
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked && !checkBox2.Checked)
+            {
+                richTextBox2.Text = ToHex(richTextBox1.Text.ToString());
+            }
+            if (checkBox2.Checked && !checkBox1.Checked)
+            {
+                richTextBox2.Text = ToASCII(richTextBox1.Text.ToString());
+            }
+        }
     }
 }
-

@@ -9,3 +9,16 @@ C:\Users\nicob\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe.ma
 C:\Users\nicob\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.application
 C:\Users\nicob\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe.manifest
 C:\Users\nicob\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.application
+C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe.manifest
+C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.application
+C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csprojAssemblyReference.cache
+C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.Form1.resources
+C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.GenerateResource.cache
+C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe.manifest
+C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.application
+C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
