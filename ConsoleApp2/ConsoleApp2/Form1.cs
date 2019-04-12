@@ -22,11 +22,12 @@ namespace ConsoleApp2
         {
 
         }
+        //Converts the given string into Hexadecimal
         public string ToHex(string data)
         {
 
             string output = string.Empty;
-
+            //Converts every char in data into Hexdeciamal
             foreach (char c in data)
             {
 
@@ -37,12 +38,13 @@ namespace ConsoleApp2
             return output;
 
         }
+        //Converts a Hexadecimal string into ASCII
         public string ToASCII(string hexString)
         {
             try
             {
                 string ascii = string.Empty;
-
+                //Converts the hexString into ASCII
                 for (int i = 0; i < hexString.Length; i += 2)
                 {
                     String hs = string.Empty;
@@ -61,6 +63,7 @@ namespace ConsoleApp2
             return string.Empty;
         }
 
+        //Checks if the user wants to convert into Hex or ASCII
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked && !checkBox2.Checked)

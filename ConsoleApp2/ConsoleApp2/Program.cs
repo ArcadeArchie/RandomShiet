@@ -17,44 +17,45 @@ namespace ConsoleApp2
             Application.Run(new Form1());
         }
 
-        public static string ToHex(string data)
-        {
+        //public static string ToHex(string data)
+        //{
 
-            string output = string.Empty;
+        //    string output = string.Empty;
 
-            foreach (char c in data)
-            {
+        //    foreach (char c in data)
+        //    {
 
-                output += ((int)c).ToString("X");
+        //        output += ((int)c).ToString("X");
 
-            }
+        //    }
 
-            return output;
+        //    return output;
 
-        }
-        public static string ToASCII(string hexString)
-        {
-            try
-            {
-                string ascii = string.Empty;
+        //}
 
-                for (int i = 0; i < hexString.Length; i += 2)
-                {
-                    String hs = string.Empty;
+        //public static string ToASCII(string hexString)
+        //{
+        //    try
+        //    {
+        //        string ascii = string.Empty;
 
-                    hs = hexString.Substring(i, 2);
-                    uint decval = Convert.ToUInt32(hs, 16);
-                    char character = Convert.ToChar(decval);
-                    ascii += character;
+        //        for (int i = 0; i < hexString.Length; i += 2)
+        //        {
+        //            String hs = string.Empty;
 
-                }
+        //            hs = hexString.Substring(i, 2);
+        //            uint decval = Convert.ToUInt32(hs, 16);
+        //            char character = Convert.ToChar(decval);
+        //            ascii += character;
 
-                return ascii;
-            }
-            catch (Exception ex) { Debug.WriteLine(ex.Message); }
+        //        }
 
-            return string.Empty;
-        }
+        //        return ascii;
+        //    }
+        //    catch (Exception ex) { Debug.WriteLine(ex.Message); }
+
+        //    return string.Empty;
+        //}
     }
 }
 

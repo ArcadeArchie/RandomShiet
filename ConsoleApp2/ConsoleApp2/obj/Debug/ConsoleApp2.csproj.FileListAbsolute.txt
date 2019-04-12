@@ -22,3 +22,16 @@ C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.ex
 C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.application
 C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe
 C:\Users\nicob\source\repos\Git\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
+C:\Users\nstrassburger\Source\Repos\RandomShiet\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\nstrassburger\Source\Repos\RandomShiet\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe.manifest
+C:\Users\nstrassburger\Source\Repos\RandomShiet\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.application
+C:\Users\nstrassburger\Source\Repos\RandomShiet\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\nstrassburger\Source\Repos\RandomShiet\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\nstrassburger\Source\Repos\RandomShiet\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csprojAssemblyReference.cache
+C:\Users\nstrassburger\Source\Repos\RandomShiet\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.Form1.resources
+C:\Users\nstrassburger\Source\Repos\RandomShiet\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.GenerateResource.cache
+C:\Users\nstrassburger\Source\Repos\RandomShiet\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\nstrassburger\Source\Repos\RandomShiet\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe.manifest
+C:\Users\nstrassburger\Source\Repos\RandomShiet\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.application
+C:\Users\nstrassburger\Source\Repos\RandomShiet\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\nstrassburger\Source\Repos\RandomShiet\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.pdb

@@ -15,14 +15,14 @@
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
           UAC-Manifestoptionen
-          Wenn Sie die Ebene der Windows-Benutzerkontensteuerung ändern möchten, ersetzen Sie den 
+          Wenn Sie die Ebene der Windows-Benutzerkontensteuerung ändern möchten, ersetzen Sie den
           Knoten "requestedExecutionLevel" durch eine der folgenden Angaben.
 
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel level="highestAvailable" uiAccess="false" />
 
-         Wenn Sie Datei- und Registrierungsvirtualisierung für Abwärtskompatibilität 
+         Wenn Sie Datei- und Registrierungsvirtualisierung für Abwärtskompatibilität
          verwenden möchten, löschen Sie den Knoten "requestedExecutionLevel".
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wkO8/nRcppTepOM6jYSdnnKoYEZM7jUvTQdKMLGW7kc=</dsig:DigestValue>
+        <dsig:DigestValue>/zifDn8ZyIn6Sq/jWX+mYeaAFfxPWH0Hopes5syc+/4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
