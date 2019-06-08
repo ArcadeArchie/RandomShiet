@@ -31,7 +31,7 @@ namespace Project_Tracker
                 credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
                     GoogleClientSecrets.Load(stream).Secrets,
                                 Scopes,
-                                "AcadeArchie",
+                                "user",
                                 CancellationToken.None
                                 ).Result;
                 Debug.WriteLine("Credential file saved to: " + credPath);
