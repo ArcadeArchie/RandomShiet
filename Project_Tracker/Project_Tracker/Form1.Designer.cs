@@ -31,19 +31,22 @@
             this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.button3 = new System.Windows.Forms.Button();
             this.ProjectNameBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.filebox = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.writeToFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadFromFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.extrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadDataFromGoogleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveDataToGoogleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -65,16 +68,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(12, 567);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(182, 64);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Write to File";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
-            // 
             // listView1
             // 
             this.listView1.Location = new System.Drawing.Point(12, 25);
@@ -82,16 +75,6 @@
             this.listView1.Size = new System.Drawing.Size(558, 434);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(200, 567);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(182, 65);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Load from File";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // ProjectNameBox
             // 
@@ -114,7 +97,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(293, 513);
+            this.label2.Location = new System.Drawing.Point(59, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 24);
             this.label2.TabIndex = 8;
@@ -122,9 +105,9 @@
             // 
             // filebox
             // 
-            this.filebox.Location = new System.Drawing.Point(203, 540);
+            this.filebox.Location = new System.Drawing.Point(3, 40);
             this.filebox.Name = "filebox";
-            this.filebox.Size = new System.Drawing.Size(181, 20);
+            this.filebox.Size = new System.Drawing.Size(200, 20);
             this.filebox.TabIndex = 7;
             // 
             // timer1
@@ -134,12 +117,36 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
             this.extrasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(579, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.writeToFileToolStripMenuItem,
+            this.loadFromFileToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // writeToFileToolStripMenuItem
+            // 
+            this.writeToFileToolStripMenuItem.Name = "writeToFileToolStripMenuItem";
+            this.writeToFileToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.writeToFileToolStripMenuItem.Text = "Write data  to File";
+            this.writeToFileToolStripMenuItem.Click += new System.EventHandler(this.WriteToFileToolStripMenuItem_Click);
+            // 
+            // loadFromFileToolStripMenuItem
+            // 
+            this.loadFromFileToolStripMenuItem.Name = "loadFromFileToolStripMenuItem";
+            this.loadFromFileToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.loadFromFileToolStripMenuItem.Text = "Load data from File";
+            this.loadFromFileToolStripMenuItem.Click += new System.EventHandler(this.LoadFromFileToolStripMenuItem_Click);
             // 
             // extrasToolStripMenuItem
             // 
@@ -164,26 +171,35 @@
             this.saveDataToGoogleToolStripMenuItem.Text = "Save Data to Google";
             this.saveDataToGoogleToolStripMenuItem.Click += new System.EventHandler(this.SaveDataToGoogleToolStripMenuItem_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.filebox);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(179, 176);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(206, 79);
+            this.panel1.TabIndex = 10;
+            this.panel1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 643);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.filebox);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ProjectNameBox);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Project Tracker";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,9 +209,7 @@
 
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox ProjectNameBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -205,6 +219,10 @@
         private System.Windows.Forms.ToolStripMenuItem extrasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadDataFromGoogleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveDataToGoogleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem writeToFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loadFromFileToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
