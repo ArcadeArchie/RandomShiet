@@ -20,8 +20,8 @@ namespace Project_Tracker
         public static List<SaveData> StartGoogle()
         {
             // Define request parameters.
-            String spreadsheetId = "1We03gQibC6u7bkDFz8fmqZQy43FvIijNpKB6Zs9_8yk";
-            String range = "Tabellenblatt1!A2:C";
+            String spreadsheetId = "<Put your SpreadsheetID here>";
+            String range = "<Set here the Edit range>";
             SpreadsheetsResource.ValuesResource.GetRequest request =
                     service.Spreadsheets.Values.Get(spreadsheetId, range);
 
@@ -49,8 +49,8 @@ namespace Project_Tracker
         public static void WriteDataToGoogle(List<IList<object>> saves)
         {
             ValueRange values = new ValueRange();
-            string spreadsheetId = "1We03gQibC6u7bkDFz8fmqZQy43FvIijNpKB6Zs9_8yk";
-            string range = "Tabellenblatt1!A2:C";
+            string spreadsheetId = "<Put your SpreadsheetID here>";
+            string range = "<Set here the Edit range>";
             values.Range = range;
             values.Values = saves;
 
