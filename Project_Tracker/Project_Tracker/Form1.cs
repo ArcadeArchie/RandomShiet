@@ -111,5 +111,12 @@ namespace Project_Tracker
             }
 
         }
+
+        private void EditSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Settings settings = new Settings();
+            settings.Activate();
+            settings.Show();
+        }
     }
 }

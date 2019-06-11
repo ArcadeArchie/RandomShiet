@@ -10,18 +10,18 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Diagnostics;
 using Newtonsoft.Json;
+using System.Resources;
 
 namespace Project_Tracker
 {
     static class Program
     {
-
         static SheetsService service;
         public static List<SaveData> StartGoogle()
         {
             // Define request parameters.
-            String spreadsheetId = "<Put your SpreadsheetID here>";
-            String range = "<Set here the Edit range>";
+            string spreadsheetId = Properties.Settings.Default.SpreadsheetId;
+            string range = Properties.Settings.Default.Tabellenrange;
             SpreadsheetsResource.ValuesResource.GetRequest request =
                     service.Spreadsheets.Values.Get(spreadsheetId, range);
 
@@ -49,8 +49,8 @@ namespace Project_Tracker
         public static void WriteDataToGoogle(List<IList<object>> saves)
         {
             ValueRange values = new ValueRange();
-            string spreadsheetId = "<Put your SpreadsheetID here>";
-            string range = "<Set here the Edit range>";
+            string spreadsheetId = Properties.Settings.Default.SpreadsheetId;
+            string range = Properties.Settings.Default.Tabellenrange;
             values.Range = range;
             values.Values = saves;
 

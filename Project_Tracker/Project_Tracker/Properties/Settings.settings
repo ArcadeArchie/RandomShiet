@@ -1,7 +1,12 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Project_Tracker.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SpreadsheetId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1We03gQibC6u7bkDFz8fmqZQy43FvIijNpKB6Zs9_8yk</Value>
+    </Setting>
+    <Setting Name="Tabellenrange" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Tabellenblatt1!A2:C</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

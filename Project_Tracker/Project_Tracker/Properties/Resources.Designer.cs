@@ -22,7 +22,7 @@ namespace Project_Tracker.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Project_Tracker.Properties {
         ///   Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Project_Tracker.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Project_Tracker.Properties {
         ///   Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,9 +63,18 @@ namespace Project_Tracker.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die 1We03gQibC6u7bkDFz8fmqZQy43FvIijNpKB6Zs9_8yk ähnelt.
         /// </summary>
-        internal static string SpreadsheetId {
+        public static string SpreadsheetId {
             get {
                 return ResourceManager.GetString("SpreadsheetId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Tabellenblatt1!A2:C ähnelt.
+        /// </summary>
+        public static string Tabellenrange {
+            get {
+                return ResourceManager.GetString("Tabellenrange", resourceCulture);
             }
         }
     }

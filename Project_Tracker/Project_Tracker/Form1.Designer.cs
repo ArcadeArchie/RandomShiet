@@ -45,6 +45,8 @@
             this.loadDataFromGoogleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveDataToGoogleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -118,7 +120,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.extrasToolStripMenuItem});
+            this.extrasToolStripMenuItem,
+            this.settingsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(579, 24);
@@ -181,6 +184,21 @@
             this.panel1.TabIndex = 10;
             this.panel1.Visible = false;
             // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editSettingsToolStripMenuItem});
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            // 
+            // editSettingsToolStripMenuItem
+            // 
+            this.editSettingsToolStripMenuItem.Name = "editSettingsToolStripMenuItem";
+            this.editSettingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editSettingsToolStripMenuItem.Text = "Edit Settings";
+            this.editSettingsToolStripMenuItem.Click += new System.EventHandler(this.EditSettingsToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -223,6 +241,8 @@
         private System.Windows.Forms.ToolStripMenuItem writeToFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadFromFileToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editSettingsToolStripMenuItem;
     }
 }
 
