@@ -3,7 +3,7 @@
 
 
 ## Project Tracker
-A simple project track with functionality to Read/Write to a Google Spreadsheet or local file
+A simple Project Tracker with functionality to Read/Write to a Google Spreadsheet or local file
 
 ### Using Google
 If you want to save the data to a google spreadsheet [follow](https://developers.google.com/sheets/api/quickstart/dotnet) the .NET guide
