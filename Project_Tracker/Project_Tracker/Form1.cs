@@ -23,27 +23,27 @@ namespace Project_Tracker
         public List<SaveData> saves;
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (timer1.Enabled)
+            if (!timer1.Enabled)
             {
                 button1.Text = "Stop Timer";
+                currentDate = DateTime.Now;
+                timer1.Enabled = true;
+                timer1.Start();
+            }
+            else if (timer1.Enabled)
+            {
+                button1.Text = "Start Timer";
                 timer1.Enabled = false;
                 timer1.Stop();
                 listView1.Items.Add(ProjectNameBox.Text + "\n" + currentDate.ToShortDateString() + "\n" + textBox1.Text);
                 saves.Add(new SaveData(ProjectNameBox.Text, DateTime.Now.ToString(), textBox1.Text));
-            }
-            else if (!timer1.Enabled)
-            {
-                button1.Text = "Start Timer";
-                currentDate = DateTime.Now;
-                timer1.Enabled = true;
-                timer1.Start();
             }
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
             System.TimeSpan diff = currentDate.Subtract(DateTime.Now);
-            textBox1.Text = diff.ToString().Replace("-", "");
+            textBox1.Text = diff.ToString().Replace("-", "").Remove(8,8);
         }
 
         private void LoadDataFromGoogleToolStripMenuItem_Click(object sender, EventArgs e)

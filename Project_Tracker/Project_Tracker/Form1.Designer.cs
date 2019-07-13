@@ -44,9 +44,9 @@
             this.extrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadDataFromGoogleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveDataToGoogleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -174,16 +174,6 @@
             this.saveDataToGoogleToolStripMenuItem.Text = "Save Data to Google";
             this.saveDataToGoogleToolStripMenuItem.Click += new System.EventHandler(this.SaveDataToGoogleToolStripMenuItem_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.filebox);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(179, 176);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(206, 79);
-            this.panel1.TabIndex = 10;
-            this.panel1.Visible = false;
-            // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -195,9 +185,19 @@
             // editSettingsToolStripMenuItem
             // 
             this.editSettingsToolStripMenuItem.Name = "editSettingsToolStripMenuItem";
-            this.editSettingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editSettingsToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.editSettingsToolStripMenuItem.Text = "Edit Settings";
             this.editSettingsToolStripMenuItem.Click += new System.EventHandler(this.EditSettingsToolStripMenuItem_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.filebox);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(179, 176);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(206, 79);
+            this.panel1.TabIndex = 10;
+            this.panel1.Visible = false;
             // 
             // Form1
             // 
