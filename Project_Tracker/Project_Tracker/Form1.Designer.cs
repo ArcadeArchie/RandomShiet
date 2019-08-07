@@ -29,220 +29,228 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.ProjectNameBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.filebox = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.writeToFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadFromFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.extrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadDataFromGoogleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveDataToGoogleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.menuStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.button1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.ProjectNameBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.tabPage2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.materialTabControl1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 465);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(558, 35);
-            this.textBox1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(388, 566);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 65);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Start Timer";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // listView1
-            // 
-            this.listView1.Location = new System.Drawing.Point(12, 25);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(558, 434);
-            this.listView1.TabIndex = 3;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // ProjectNameBox
-            // 
-            this.ProjectNameBox.Location = new System.Drawing.Point(388, 540);
-            this.ProjectNameBox.Name = "ProjectNameBox";
-            this.ProjectNameBox.Size = new System.Drawing.Size(181, 20);
-            this.ProjectNameBox.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(446, 513);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 24);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Project name";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(59, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 24);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Filename";
-            // 
-            // filebox
-            // 
-            this.filebox.Location = new System.Drawing.Point(3, 40);
-            this.filebox.Name = "filebox";
-            this.filebox.Size = new System.Drawing.Size(200, 20);
-            this.filebox.TabIndex = 7;
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // menuStrip1
+            // tabPage2
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.extrasToolStripMenuItem,
-            this.settingsToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(579, 24);
-            this.menuStrip1.TabIndex = 9;
-            this.menuStrip1.Text = "menuStrip1";
+            this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.materialRaisedButton3);
+            this.tabPage2.Controls.Add(this.materialRaisedButton2);
+            this.tabPage2.Controls.Add(this.materialRaisedButton1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(574, 531);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Extras/Settings";
             // 
-            // fileToolStripMenuItem
+            // tabPage1
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.writeToFileToolStripMenuItem,
-            this.loadFromFileToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.materialLabel1);
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.ProjectNameBox);
+            this.tabPage1.Controls.Add(this.listView1);
+            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(574, 531);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Timer";
             // 
-            // writeToFileToolStripMenuItem
+            // materialTabControl1
             // 
-            this.writeToFileToolStripMenuItem.Name = "writeToFileToolStripMenuItem";
-            this.writeToFileToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.writeToFileToolStripMenuItem.Text = "Write data  to File";
-            this.writeToFileToolStripMenuItem.Click += new System.EventHandler(this.WriteToFileToolStripMenuItem_Click);
+            this.materialTabControl1.Controls.Add(this.tabPage1);
+            this.materialTabControl1.Controls.Add(this.tabPage2);
+            this.materialTabControl1.Depth = 0;
+            this.materialTabControl1.Location = new System.Drawing.Point(-2, 101);
+            this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabControl1.Name = "materialTabControl1";
+            this.materialTabControl1.SelectedIndex = 0;
+            this.materialTabControl1.Size = new System.Drawing.Size(582, 557);
+            this.materialTabControl1.TabIndex = 14;
             // 
-            // loadFromFileToolStripMenuItem
+            // textBox1
             // 
-            this.loadFromFileToolStripMenuItem.Name = "loadFromFileToolStripMenuItem";
-            this.loadFromFileToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.loadFromFileToolStripMenuItem.Text = "Load data from File";
-            this.loadFromFileToolStripMenuItem.Click += new System.EventHandler(this.LoadFromFileToolStripMenuItem_Click);
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(13, 352);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(558, 35);
+            this.textBox1.TabIndex = 0;
             // 
-            // extrasToolStripMenuItem
+            // listView1
             // 
-            this.extrasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loadDataFromGoogleToolStripMenuItem,
-            this.saveDataToGoogleToolStripMenuItem});
-            this.extrasToolStripMenuItem.Name = "extrasToolStripMenuItem";
-            this.extrasToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
-            this.extrasToolStripMenuItem.Text = "Extras";
+            this.listView1.Location = new System.Drawing.Point(13, 7);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(558, 339);
+            this.listView1.TabIndex = 3;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // loadDataFromGoogleToolStripMenuItem
+            // materialTabSelector1
             // 
-            this.loadDataFromGoogleToolStripMenuItem.Name = "loadDataFromGoogleToolStripMenuItem";
-            this.loadDataFromGoogleToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.loadDataFromGoogleToolStripMenuItem.Text = "Load Data from Google";
-            this.loadDataFromGoogleToolStripMenuItem.Click += new System.EventHandler(this.LoadDataFromGoogleToolStripMenuItem_Click);
+            this.materialTabSelector1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Location = new System.Drawing.Point(-2, 59);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.Size = new System.Drawing.Size(582, 36);
+            this.materialTabSelector1.TabIndex = 18;
+            this.materialTabSelector1.Text = "materialTabSelector1";
             // 
-            // saveDataToGoogleToolStripMenuItem
+            // button1
             // 
-            this.saveDataToGoogleToolStripMenuItem.Name = "saveDataToGoogleToolStripMenuItem";
-            this.saveDataToGoogleToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.saveDataToGoogleToolStripMenuItem.Text = "Save Data to Google";
-            this.saveDataToGoogleToolStripMenuItem.Click += new System.EventHandler(this.SaveDataToGoogleToolStripMenuItem_Click);
+            this.button1.AutoSize = true;
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button1.Depth = 0;
+            this.button1.Icon = null;
+            this.button1.Location = new System.Drawing.Point(457, 485);
+            this.button1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.button1.Name = "button1";
+            this.button1.Primary = true;
+            this.button1.Size = new System.Drawing.Size(108, 36);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Start Timer";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
-            // settingsToolStripMenuItem
+            // ProjectNameBox
             // 
-            this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editSettingsToolStripMenuItem});
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.settingsToolStripMenuItem.Text = "Settings";
+            this.ProjectNameBox.Depth = 0;
+            this.ProjectNameBox.Hint = "Project Name";
+            this.ProjectNameBox.Location = new System.Drawing.Point(398, 456);
+            this.ProjectNameBox.MaxLength = 32767;
+            this.ProjectNameBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ProjectNameBox.Name = "ProjectNameBox";
+            this.ProjectNameBox.PasswordChar = '\0';
+            this.ProjectNameBox.SelectedText = "";
+            this.ProjectNameBox.SelectionLength = 0;
+            this.ProjectNameBox.SelectionStart = 0;
+            this.ProjectNameBox.Size = new System.Drawing.Size(167, 23);
+            this.ProjectNameBox.TabIndex = 5;
+            this.ProjectNameBox.TabStop = false;
+            this.ProjectNameBox.UseSystemPasswordChar = false;
+            this.ProjectNameBox.Enter += new System.EventHandler(this.ProjectNameBox_Enter);
             // 
-            // editSettingsToolStripMenuItem
+            // materialRaisedButton1
             // 
-            this.editSettingsToolStripMenuItem.Name = "editSettingsToolStripMenuItem";
-            this.editSettingsToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.editSettingsToolStripMenuItem.Text = "Edit Settings";
-            this.editSettingsToolStripMenuItem.Click += new System.EventHandler(this.EditSettingsToolStripMenuItem_Click);
+            this.materialRaisedButton1.AutoSize = true;
+            this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Icon = null;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(6, 20);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(192, 36);
+            this.materialRaisedButton1.TabIndex = 0;
+            this.materialRaisedButton1.Text = "Load data from google";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.LoadDataFromGoogle_Click);
             // 
-            // panel1
+            // materialRaisedButton2
             // 
-            this.panel1.Controls.Add(this.filebox);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(179, 176);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(206, 79);
-            this.panel1.TabIndex = 10;
-            this.panel1.Visible = false;
+            this.materialRaisedButton2.AutoSize = true;
+            this.materialRaisedButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton2.Depth = 0;
+            this.materialRaisedButton2.Icon = null;
+            this.materialRaisedButton2.Location = new System.Drawing.Point(6, 106);
+            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton2.Name = "materialRaisedButton2";
+            this.materialRaisedButton2.Primary = true;
+            this.materialRaisedButton2.Size = new System.Drawing.Size(117, 36);
+            this.materialRaisedButton2.TabIndex = 1;
+            this.materialRaisedButton2.Text = "Edit Settings";
+            this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.EditSettings_Click);
+            // 
+            // materialRaisedButton3
+            // 
+            this.materialRaisedButton3.AutoSize = true;
+            this.materialRaisedButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton3.Depth = 0;
+            this.materialRaisedButton3.Icon = null;
+            this.materialRaisedButton3.Location = new System.Drawing.Point(6, 64);
+            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton3.Name = "materialRaisedButton3";
+            this.materialRaisedButton3.Primary = true;
+            this.materialRaisedButton3.Size = new System.Drawing.Size(162, 36);
+            this.materialRaisedButton3.TabIndex = 2;
+            this.materialRaisedButton3.Text = "Save data to goole";
+            this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.materialRaisedButton3.Click += new System.EventHandler(this.SaveDataToGoogle_Click);
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.BackColor = System.Drawing.Color.White;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(329, 434);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(236, 19);
+            this.materialLabel1.TabIndex = 6;
+            this.materialLabel1.Text = "*Project Name must not be empty";
+            this.materialLabel1.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 643);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.ProjectNameBox);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.ClientSize = new System.Drawing.Size(579, 656);
+            this.Controls.Add(this.materialTabSelector1);
+            this.Controls.Add(this.materialTabControl1);
             this.Name = "Form1";
             this.Text = "Project Tracker";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.materialTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.TextBox ProjectNameBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox filebox;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem extrasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loadDataFromGoogleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveDataToGoogleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem writeToFileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loadFromFileToolStripMenuItem;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editSettingsToolStripMenuItem;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.TextBox textBox1;
+        private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
+        private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField ProjectNameBox;
+        private MaterialSkin.Controls.MaterialRaisedButton button1;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }
 

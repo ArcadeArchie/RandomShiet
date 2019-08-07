@@ -38,7 +38,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 27);
+            this.textBox1.Location = new System.Drawing.Point(12, 89);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(187, 20);
             this.textBox1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 8);
+            this.label1.Location = new System.Drawing.Point(15, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 1;
@@ -54,7 +54,7 @@
             // 
             // SpreadsheetID_button
             // 
-            this.SpreadsheetID_button.Location = new System.Drawing.Point(15, 54);
+            this.SpreadsheetID_button.Location = new System.Drawing.Point(15, 116);
             this.SpreadsheetID_button.Name = "SpreadsheetID_button";
             this.SpreadsheetID_button.Size = new System.Drawing.Size(121, 23);
             this.SpreadsheetID_button.TabIndex = 2;
@@ -64,7 +64,7 @@
             // 
             // SetTablerange_button
             // 
-            this.SetTablerange_button.Location = new System.Drawing.Point(205, 53);
+            this.SetTablerange_button.Location = new System.Drawing.Point(205, 115);
             this.SetTablerange_button.Name = "SetTablerange_button";
             this.SetTablerange_button.Size = new System.Drawing.Size(97, 23);
             this.SetTablerange_button.TabIndex = 5;
@@ -75,7 +75,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(202, 7);
+            this.label2.Location = new System.Drawing.Point(202, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 4;
@@ -83,16 +83,16 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(205, 27);
+            this.textBox2.Location = new System.Drawing.Point(205, 89);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(120, 20);
             this.textBox2.TabIndex = 3;
             // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 113);
+            this.ClientSize = new System.Drawing.Size(337, 159);
             this.Controls.Add(this.SetTablerange_button);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
