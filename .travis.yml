@@ -1,0 +1,6 @@
+language: csharp
+solution: Project_Tracker.sln
+mono: none
+dotnet: 3.0.0
+script:
+ - dotnet restore
