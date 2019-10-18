@@ -1,6 +1,3 @@
 language: csharp
 solution: Project_Tracker/Project_Tracker.sln
-mono: none
-dotnet: 3.0.100
-script:
- - dotnet restore
+mono: latest
