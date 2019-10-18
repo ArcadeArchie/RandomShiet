@@ -4,6 +4,7 @@
 
 ## Project Tracker
 A simple Project Tracker with functionality to Read/Write to a Google Spreadsheet or local file
+
 [![Build Status](https://travis-ci.org/ArcadeArchie/RandomShiet.svg?branch=master)](https://travis-ci.org/ArcadeArchie/RandomShiet)
 ### Using Google
 If you want to save the data to a google spreadsheet [follow](https://developers.google.com/sheets/api/quickstart/dotnet) the .NET guide
