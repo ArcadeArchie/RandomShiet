@@ -1,5 +1,5 @@
 language: csharp
-solution: Project_Tracker.sln
+solution: Project_Tracker/Project_Tracker.sln
 mono: none
 dotnet: 3.0.0
 script:
