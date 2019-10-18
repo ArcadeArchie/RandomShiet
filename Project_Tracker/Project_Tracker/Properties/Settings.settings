@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="SpreadsheetId" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1We03gQibC6u7bkDFz8fmqZQy43FvIijNpKB6Zs9_8yk</Value>
+      <Value Profile="(Default)">docs.google.com/spreadsheets/d/#This part#</Value>
     </Setting>
     <Setting Name="Tabellenrange" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Tabellenblatt1!A2:C</Value>
+      <Value Profile="(Default)">#Name of your page you want to edit#!#edit area e.g(A2:C)#</Value>
     </Setting>
   </Settings>
 </SettingsFile>
