@@ -128,9 +128,10 @@
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="credentials.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <None Include="credentials.development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="credentials.json" />
     <None Include="packages.config" />
     <None Include="Project_Tracker_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
